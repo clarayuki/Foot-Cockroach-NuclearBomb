@@ -1,10 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head><title>Rock Paper Scissors</title></head>
-  <body>
-    <!--here you can have some HTML markup to play with-->
-    <div id="test">test div</div>
 
-    <script src="scripts.js"></script>
-  </body>
-</html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foot Cockroach Nuclear Bomb</title>
+  <link type="text/css" rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="game-header">
+    <h1>
+      <span class="yellow-color">FOOT</span>&nbsp;
+      <span class="brown-color">COCKROACH</span>&nbsp;
+      <span class="red-color">NUCLEAR BOMB</span>
+    </h1>
+    <h2>Who will survive?</h2>
+    <p>
+      <span class="yellow-color">Foot</span> smashes <span class="brown-color">Cockroach</span> ⯁
+      <span class="brown-color">Cockroach</span> survives <span class="red-color">Nuclear Bomb</span> ⯁
+      <span class="red-color">Nuclear Bomb</span> blows up <span class="yellow-color">Foot</span>
+    </p>
+  </header>
+
+  <main class="main-content">
+
+    <div class="entities-box">
+      <button class="foot-button entity-button">
+        <img src="https://cdn-icons-png.flaticon.com/512/1040/1040446.png" alt="footpng" border="0" width="150"/>
+      </button>
+      <button class="cockroach-button entity-button">
+        <img src="https://cdn-icons-png.flaticon.com/512/8005/8005026.png" alt="cockroachpng" border="0" width="150px"/>
+      </button>
+      <button class="nuclearbomb-button entity-button">
+        <img src="https://cdn-icons-png.flaticon.com/512/1282/1282886.png" alt="bombpng" border="0" width="150px"/>
+      </button>
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="game-output">
+      <div class="pc-play-div grey-border centering">
+        <div class="pc-title">Enemy's Choice</div>
+        <div class="space"></div>
+        <img src="https://cdn-icons-png.flaticon.com/512/3524/3524344.png" alt="questionpng" border="0" width="115px" id="pc-icon"/>
+      </div>
+      <div class="vertical-line"></div>
+      <div class="game-results">
+        <div class="round">Round: 0</div>
+        <p class="lives">Your Lives: 5 ︱ Enemy's Lives: 5</p>
+        <p class="fight-message">No combat yet</p>
+      </div>
+    </div>
+
+    <div class="game-end-div">
+      <p class="game-end-text"></p>
+      <button class="play-again">Fight Again!</button>
+    </div>
+
+  </main>
+
+  <footer class="copyright">
+    <p>Crafted by Yuki</p>
+  </footer>
+  <script type="text/javascript" src="script.js"></script>
+
+</body>

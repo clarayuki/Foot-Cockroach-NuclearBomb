@@ -1,0 +1,121 @@
+body {
+    font-family: 'Mitr', sans-serif;
+    color: #725A5A;
+    margin: 0;
+}
+
+main {
+    display: block;
+}
+
+.yellow-color {
+    color: gold;
+}
+
+.brown-color {
+    color: saddlebrown;
+}
+
+.red-color {
+    color: red;
+}
+
+.game-header {
+    text-align: center;
+    font-size: 26px;
+    color: #725A5A;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.entities-box {
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid #725A5A;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.entity-button {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    transition: all .3s;
+}
+
+.entity-button:focus,
+.play-again:focus {
+    outline: none;
+}
+
+.entity-button:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.1);
+    transition: all .3s;
+}
+
+.separator {
+    padding: 15px;
+}
+
+.game-output {
+    display: flex;
+    border: 2px solid #725A5A;
+    border-radius: 10px;
+    transition: all .2s linear;
+    padding: 20px;
+
+}
+
+.pc-play-div {
+    transition: all .2s linear;
+}
+
+.space {
+    padding: 5px;
+}
+.pc-title {
+    font-size: 19px;
+    font-weight: 900;
+}
+
+
+.game-results {
+    margin: 0 50px;
+    font-size: 19px;
+}
+
+
+
+.game-end-div {
+    text-align: center;
+}
+
+.game-end-text {
+    font-size: 50px;
+}
+
+.play-again {
+    visibility: hidden;
+    margin-bottom: 60px;
+    padding: 20px;
+    font-size: 25px;
+    color: #725A5A;
+    border: 2px solid #725A5A;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.play-again:hover {
+    background-color: #725A5A;
+    color: #fff;
+}
+
