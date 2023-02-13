@@ -1,7 +1,7 @@
 # Foot-Cockroach-NuclearBomb
 <p> A Rock-Paper-Scissors based game :) </p>
 
-## ✔️ Técnicas e tecnologias utilizadas
+## ✔️ Technologies used
 
 - ``HTML``
 - ``CSS``
