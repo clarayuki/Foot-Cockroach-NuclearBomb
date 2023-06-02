@@ -1,5 +1,5 @@
 # Foot-Cockroach-NuclearBomb
-<p> A Rock-Paper-Scissors based game :) </p>
+<p> A simple Rock-Paper-Scissors based game :) </p>
 
 ## ✔️ Technologies used
 
