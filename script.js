@@ -71,10 +71,13 @@ function end_game(player_health, pc_health) {
         }
         else {
             message.innerText = "Unfortunately, it wasn't this time.";
-            end_text = "You lost the game. :(";
+            end_text.innerText = "You lost the game. :(";
         }
-    }
+        document.querySelector('.foot-button').disabled = true;
+        document.querySelector('.cockroach-button').disabled = true;
+        document.querySelector('.nuclearbomb-button').disabled = true;
 
+    }
     play_again_button.style.visibility = 'visible';
 }
 
@@ -83,6 +86,7 @@ function reset_game() {
         window.location.reload();
     });
 }
+
 
 function game() {
     let player_choice;
@@ -97,14 +101,14 @@ function game() {
                 player_choice = 'nuclearbomb';
             }
 
-        add_round();
-        count_lives(player_choice, display_pc_choice());
-        end_game(player_lives, pc_lives);
-        reset_game();
+            add_round();
+            count_lives(player_choice, display_pc_choice());
+            end_game(player_lives, pc_lives);
+            reset_game();
         });
     });
 }
 
 game();
-    
+
 
