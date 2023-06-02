@@ -1,3 +1,4 @@
+// Declaring variables and constants 
 let round = 0;
 let player_lives = 5;
 let pc_lives = 5;
@@ -7,18 +8,21 @@ const rounds = document.querySelector('.round');
 const message = document.querySelector('.fight-message');
 const play_again_button = document.querySelector('.play-again');
 
+// Function that increments the number of rounds by 1
 function add_round() {
     round = round + 1;
     rounds.innerText = `Round: ${round}`;
     return round;
 }
 
+// Function that chooses an entity for the pc randomly
 function pc_choice() {
     const entities = ['foot', 'cockroach', 'nuclearbomb'];
     const choice = entities[Math.floor(Math.random() * 3)];
     return choice;
 }
 
+// Function that displays what the pc has chosen 
 function display_pc_choice() {
     const choice = pc_choice();
 
@@ -37,6 +41,7 @@ function display_pc_choice() {
     return choice;
 }
 
+// Function that deals with the lives of the player and the pc
 function count_lives(player_choice, pc_choice) {
     const game_output = document.querySelector('.game-output');
     const pc_play_div = document.querySelector('.pc-play-div');
@@ -62,6 +67,7 @@ function count_lives(player_choice, pc_choice) {
     return [player_lives, pc_lives];
 }
 
+// When the game ends, the entity buttons are disabled and a message of victory or defeat is displayed
 function end_game(player_health, pc_health) {
     if (player_health === 0 || pc_health === 0) {
         const end_text = document.querySelector('.game-end-text');
@@ -81,6 +87,7 @@ function end_game(player_health, pc_health) {
     play_again_button.style.visibility = 'visible';
 }
 
+// Function that resets the game
 function reset_game() {
     play_again_button.addEventListener('click', () => {
         window.location.reload();
@@ -88,6 +95,7 @@ function reset_game() {
 }
 
 
+// Function that contains the whole logic of the game
 function game() {
     let player_choice;
     entity_buttons.forEach((entity) => {
